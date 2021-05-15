@@ -17,17 +17,13 @@
   }
 
   a {
-    display: inline;
+    display: inline-block;
     position: relative;
     padding: 0 0.5rem;
     height: 5rem;
     line-height: 5rem;
     color: var(--gray-300);
     transition: color 0.2s;
-    -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
-    -ms-transition: color 0.2s;
-    -o-transition: color 0.2s;
 
     & + a {
       margin-left: 2rem;
@@ -41,13 +37,9 @@
       content: "";
       height: 3px;
       border-radius: 3px 3px 0 0;
-      -webkit-border-radius: 3px 3px 0 0;
-      -moz-border-radius: 3px 3px 0 0;
-      -ms-border-radius: 3px 3px 0 0;
-      -o-border-radius: 3px 3px 0 0;
       width: 100%;
       position: absolute;
-      bottom: 1px;
+      bottom: 0px;
       left: 0;
       background: var(--yellow-500);
     }
